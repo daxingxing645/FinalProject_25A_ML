@@ -177,6 +177,7 @@ style: |
 ![alt text](resources/svm_FourKernel.png)
 
 ###  最优选择：RBF 核函数
+
 - 准确率最高
 - 训练效率较优秀
 
