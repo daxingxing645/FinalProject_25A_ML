@@ -353,6 +353,37 @@ gamma: 0.001到0.003之间随机取30个值(主要集中在0.002附近)
 
 ---
 
+#  CNN 分类结果分析
+
+![bg left:50% contain](resources/cnn_report.png)
+
+测试集准确率: **62%**
+
+---
+
+#  混淆矩阵分析：
+
+![bg right:45% contain](resources/cnn_ConfusionMatrix.png)
+
+## 类别混淆现象：Cat 与 Dog 的误判分析
+- 32×32 低分辨率丢失关键细节
+- 猫/狗的毛发、轮廓特征相似
+- **受限于以上两个因素，CNN也难以实现较高的准确率**
+
+---
+
+# ROC曲线分析
+
+![bg right:45% contain](resources/cnn_ROC.png)
+
+**类别间差异**
+
+表现优异的类别：automobile、ship、truck等，ROC 曲线靠近左上角，AUC 均达到0.96，说明这些类别被模型准确区分的概率很高；
+
+表现较差的类别：cat（AUC=0.87）、bird（AUC=0.88），ROC 曲线更靠近随机虚线，AUC 明显低于其他类别，是模型的薄弱项。
+
+---
+
 #  深度学习 vs 传统机器学习
 
 ## 核心差异对比
