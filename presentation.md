@@ -237,7 +237,7 @@ gamma: 0.001到0.003之间随机取30个值(主要集中在0.002附近)
 
 #  混淆矩阵分析：
 
-![bg left:45% contain](resources/svm_ConfusionMatrix.png)
+![bg right:45% contain](resources/svm_ConfusionMatrix.png)
 
 ## 严重的类别混淆现象
 
@@ -270,6 +270,8 @@ gamma: 0.001到0.003之间随机取30个值(主要集中在0.002附近)
 
 ## 定制化特征工程
 挖掘 cat 类独有的视觉特征（形状、纹理、边缘等），弥补原有通用特征对 cat 类区分度不足的缺陷。
+
+> 新增针对猫类视觉特点设计的 Hu 形状不变矩、灰度纹理统计特征（均值 / 方差 / 偏度 / 峰度）和边缘密度特征
 
 ---
 ![bg left:60% contain](resources/svm_report2.png)
